@@ -4,8 +4,8 @@ MQTT Python based scripts for Raspberry Pi based Cheerlights Projects
 ---
 
 ## Table of Contents
-Installation/Configuration
-Running the Script
+- [Installation/Configuration](https://github.com/n8acl/cheerlightsmqtt/wiki/Installation-and-Configuration)
+- [Running the Scripts](https://github.com/n8acl/cheerlightsmqtt/wiki/Running-the-Script)
 
 ---
 
