@@ -14,7 +14,7 @@ This is a fun little project I created for the Raspberry Pi Cheerlights devices 
 
 These scripts are designed to work with a Pimoroni BLINKT! or a Pi Sense-Hat on a Raspberry Pi. 
 
-I figured these would be fun to share with others who use MQTT and might want ot play with Cheerlights projects.
+I figured these would be fun to share with others who use MQTT and might want to play with Cheerlights projects.
 
 This project assumes you are already running your own MQTT Broker for something else, for example, home automation.
 
@@ -23,7 +23,7 @@ This project assumes you are already running your own MQTT Broker for something 
 ## What is...
 
 #### cheerlights_bridge.py
-This is a python script that I wrote that connects to the MQTT broker provided by Hans Scharler for the Cheerlights project (more below). It listens to the 2 topics (cheerlightsRGB and cheerlights) provided there and relays them to your own MQTT broker to be used for your own Cheerlights Projects.
+This is a python script that I wrote that connects to the MQTT broker provided by Hans Scharler for the Cheerlights project (more below). It listens to the 2 topics (cheerlightsRGB and cheerlights) provided there and relays them to your own MQTT broker to be used for your own Cheerlights Projects. The reason I did this is so I only need one connection to the Cheerlights Broker vs 3 or 4 or 5 pinging the Cheerlights Broker just from my network alone.
 
 #### cheerlights_mqtt_blinkt.py
 This is a python script that I wrote that takes the data provided by the bridge above and turn the LEDS of the PiMoroni BLNIKT! hat the appropriate color. This connects to your MQTT Broker for the data.
